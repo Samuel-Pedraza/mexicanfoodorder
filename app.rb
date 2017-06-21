@@ -15,8 +15,7 @@ post "/" do
 
 	client.messages.create(
 	  from: '+15034769695',
-	  to: '+15035606162',
-	  #to: '+19713029110',
+	  to: '+19713029110',
 	  body: @query
 	)
 
