@@ -9,14 +9,16 @@ get "/" do
 end
 
 post "/" do
-	@query = params[:q]
+	@name = params[:name]
+	@order = params[:order]
+	@time = params[:time]
 
 	client = Twilio::REST::Client.new account_sid, auth_token
 
 	client.messages.create(
 	  from: '+15034769695',
 	  to: '+19713029110',
-	  body: @query
+	  body: "Name: " +  @name + "\n" + "Order: " + @order +  "\n" + "Time to pick up: " + @time
 	)
 
 	return "Message has been sent!"
