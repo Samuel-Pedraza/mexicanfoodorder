@@ -3,6 +3,11 @@
 <head>
 	<title>Testing</title>
 </head>
+<style type="text/css">
+	.warning {
+		color: red;
+	}
+</style>
 <body>
 
 	<form action="/" method="POST">
@@ -17,8 +22,10 @@
 
 		<h3>Time to Pick Up</h3>
 		<input type="text" name="time">
+		<p class="warning">Place order earlier in day, or else order will not be seen by the workers.</p>
 
 		<input type="submit">
+
 	</form>
 
 </body>
