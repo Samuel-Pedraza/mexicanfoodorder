@@ -1,8 +1,8 @@
 require 'twilio-ruby'
 require 'sinatra'
 
-account_sid = "ACc19bebccafc8fb9e962782f4bbbac9b3"
-auth_token = "0cd23be8ddc1932fc372b3dbd2836601"
+account_sid = ""
+auth_token = ""
 
 get "/" do
 	erb :index
